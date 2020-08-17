@@ -132,6 +132,6 @@ const paletteGen = (h, s, lightness) => {
 };
 
 // default palette
-const defaultColor = "#444444";
+const defaultColor = "#000000";
 paletteGen(...hexToHSL(defaultColor));
 hexInput.value = defaultColor;
