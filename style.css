@@ -95,3 +95,17 @@ h1 {
 .color:hover {
 	z-index: 2;
 }
+
+.progresso {
+	background: url(img/20200727_225911.png) 50% 50% no-repeat #00BFFF;
+	background-size:320px 320px;
+    display: none;
+    position: fixed;
+    left: 50%;
+	top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 9999px;
+	width: 9999px;
+}

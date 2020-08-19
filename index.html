@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <div id="divCarregando" class="progresso">
+    </div>
+
     <h1>Gerador de cor hexadecimal</h1>
     <div class="container">
-        
         <input type="text" class="hex" placeholder='Insira a cor em hexadecimal'>
     </div>
     <div class="palette">
         
     </div>
-    <script src="javascript.js"></script>
+
+<script>
+    $(document).ready(function () {
+    $("#divCarregando").delay(2700).show();
+    $(window).load(function () {
+        // Quando a página estiver totalmente carregada, remove o id
+        $('#divCarregando').fadeOut('slow');
+    });
+});
+</script>
+<script src="javascript.js"></script>
 </body>
 </html>
